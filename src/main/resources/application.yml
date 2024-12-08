@@ -7,18 +7,18 @@ spring:
         - id: user
           uri: http://localhost:8081
           predicates:
-            - Path=/user
+            - Path=/user/**
         - id: ingredient
           uri: http://localhost:8082
           predicates:
-            - Path=/ingredient
+            - Path=/ingredient/**
         - id: basket
           uri: http://localhost:8083
           predicates:
-            - Path=/basket
+            - Path=/basket/**
         - id: recipe
           uri: http://localhost:8084
           predicates:
-            - Path=/recipe
+            - Path=/recipe/**
 server:
   port: 8222
