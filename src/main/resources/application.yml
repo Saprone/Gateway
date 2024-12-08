@@ -18,5 +18,7 @@ spring:
             - Path=/basket/**
         - id: recipe
           uri: http://localhost:8084
+          predicates:
+            - Path=/recipe/**
 server:
   port: 8222
