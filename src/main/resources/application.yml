@@ -4,10 +4,6 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: user
-          uri: http://localhost:8081
-          predicates:
-            - Path=/user/**
         - id: ingredient
           uri: http://localhost:8082
           predicates:
