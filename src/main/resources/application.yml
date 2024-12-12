@@ -15,6 +15,6 @@ spring:
         - id: recipe
           uri: http://localhost:8084
           predicates:
-            - Path=/recipe/**
+            - Path=/recipes
 server:
   port: 8222
