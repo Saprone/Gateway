@@ -23,10 +23,10 @@ FROM openjdk:21-jdk-slim
 WORKDIR /app
 
 # Copy the built JAR file from the builder stage
-COPY --from=builder /app/target/*.jar gateway-app.jar
+COPY --from=builder /app/target/*.jar gateway.jar
 
 # Expose the application port
 EXPOSE 8222
 
 # Run the application
-ENTRYPOINT ["java", "-jar", "gateway-app.jar"]
+ENTRYPOINT ["java", "-jar", "gateway.jar"]
